@@ -1,0 +1,5 @@
+<decoder name="redis">
+  <program_name>redis</program_name>
+  <regex>^([0-9]+):([A-Z]{1}) ([0-9]+) ([A-Za-z]+): (.*)$</regex>
+  <order>id severity pid program message</order>
+</decoder>
