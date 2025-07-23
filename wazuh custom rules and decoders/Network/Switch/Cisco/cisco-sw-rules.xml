@@ -1,1 +1,10 @@
+#------------CISCO_RULESET------------#
 
+<group name="cisco-switch">
+ <rule id="100930" level="5">
+    <decoded_as>cisco-switch</decoded_as>
+    <description>Cisco Switch: $(Switch-Name) alert</description>
+ </rule>
+</group>
+
+#------------CISCO_RULESET------------#
