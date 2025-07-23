@@ -1,1 +1,20 @@
 
+<group name="mysql,">
+    <rule id="100150" level="3">
+        <decoded_as>custom_mysql</decoded_as>
+        <field name="_action">Query</field>
+        <description>The following query '$(command)' was executed</description>
+    </rule>
+</group>
+<group name="mysql2">
+  <rule id="100009" level="5">
+    <decoded_as>mysql2</decoded_as>
+    <regex>Access denied for user</regex>
+    <description>Access for user denied</description>
+  </rule>
+  <rule id="100008" level="5">
+    <decoded_as>mysql2</decoded_as>
+<regex>on  using Socket</regex>
+    <description>Authetication Success</description>
+  </rule>
+</group>
