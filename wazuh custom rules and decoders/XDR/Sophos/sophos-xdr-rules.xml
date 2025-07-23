@@ -1,1 +1,328 @@
+<!--SOPHOS XDR-->
+<group name="Sophos">
 
+<!--Event::ADSync::Success-->
+
+<rule id="100401" level="3"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::ADSync::Success</field> 
+     <description>Sophos XDR: ADSync Success alert</description> 
+  </rule>
+
+<!--Event::Endpoint::Application::Blocked-->
+
+<rule id="100402" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Application::Blocked</field> 
+     <description>Sophos XDR: Endpoint Application Blocked</description> 
+  </rule>
+
+<!--Event::Endpoint::Application::Detected-->
+
+<rule id="100403" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Application::Detected</field> 
+     <description>Sophos XDR: Endpoint Application Detected</description> 
+  </rule>
+
+<!--Event::Endpoint::CloneDetected-->
+
+<rule id="100404" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CloneDetected</field> 
+     <description>Sophos XDR: Endpoint Clone Detected</description> 
+  </rule>
+
+
+<!--Event::Endpoint::Compliant-->
+
+<rule id="100405" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Compliant</field> 
+     <description>Sophos XDR: Endpoint Compliant</description> 
+  </rule>
+
+<!--Event::Endpoint::CoreClean-->
+
+<rule id="100406" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CoreClean</field> 
+     <description>Sophos XDR: Endpoint CoreClean</description> 
+  </rule>
+
+<!--Event::Endpoint::CoreDetection-->
+
+<rule id="100407" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CoreDetection</field> 
+     <description>Sophos XDR: Endpoint Core Detection</description> 
+  </rule>
+
+<!--Event::Endpoint::CoreHmpaCleanNothingFound-->
+
+<rule id="100408" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CoreHmpaCleanNothingFound</field> 
+     <description>Sophos XDR: Endpoint Core HmpaCleanNothingFound</description> 
+  </rule>
+
+<!--Event::Endpoint::CorePuaDetection-->
+
+<rule id="100409" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CorePuaDetection</field> 
+     <description>Sophos XDR: Endpoint Core PUA Detection</description> 
+  </rule>
+
+<!--Event::Endpoint::CorePuaRestoreFailed-->
+
+<rule id="100410" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CorePuaRestoreFailed</field> 
+     <description>Sophos XDR: Endpoint Core PUA Restore Failed</description> 
+  </rule>
+
+<!--Event::Endpoint::CoreReboot-->
+
+<rule id="100411" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CoreReboot</field> 
+     <description>Sophos XDR: Endpoint Core Reboot</description> 
+  </rule>
+
+<!--Event::Endpoint::CoreRestoreFailed-->
+
+<rule id="100412" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::CoreRestoreFailed</field> 
+     <description>Sophos XDR: Endpoint Core Restore Failed</description> 
+  </rule>
+
+<!--Event::Endpoint::Device::AlertedOnly-->
+
+<rule id="100413" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Device::AlertedOnly</field> 
+     <description>Sophos XDR: Endpoint Device Alerted Only</description> 
+  </rule>
+
+<!--Event::Endpoint::HmpaExploitPrevented-->
+
+<rule id="100414" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::HmpaExploitPrevented</field> 
+     <description>Sophos XDR: Endpoint Hmpa Exploite Prevented</description> 
+  </rule>
+
+<!--Event::Endpoint::Management::Resumed-->
+
+<rule id="100415" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Management::Resumed</field> 
+     <description>Sophos XDR: Endpoint Management Resumed</description> 
+  </rule>
+
+
+<!--Event::Endpoint::Management::Suspended-->
+
+<rule id="100416" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Management::Suspended</field> 
+     <description>Sophos XDR: Endpoint Management Suspended</description> 
+  </rule>
+
+<!--Event::Endpoint::NonCompliant-->
+
+<rule id="100417" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::NonCompliant</field> 
+     <description>Sophos XDR: Endpoint NonCompliant</description> 
+  </rule>
+
+<!--Event::Endpoint::NotProtected-->
+
+<rule id="100418" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::NotProtected</field> 
+     <description>Sophos XDR: Endpoint Not Protected</description> 
+  </rule>
+
+<!--Event::Endpoint::OutOfDate-->
+
+<rule id="100419" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::OutOfDate</field> 
+     <description>Sophos XDR: Endpoint Out of Date</description> 
+  </rule>
+
+<!--Event::Endpoint::Registered-->
+
+<rule id="100420" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Registered</field> 
+     <description>Sophos XDR: Endpoint Registered</description> 
+  </rule>
+
+<!--Event::Endpoint::Reprotected-->
+
+<rule id="100421" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Reprotected</field> 
+     <description>Sophos XDR: Endpoint Reprotected</description> 
+  </rule>
+
+<!--Event::Endpoint::SavDisabled-->
+
+<rule id="100422" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::SavDisabled</field> 
+     <description>Sophos XDR: Endpoint Sav Disabled</description> 
+  </rule>
+
+<!--Event::Endpoint::SavEnabled-->
+
+<rule id="100423" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::SavEnabled</field> 
+     <description>Sophos XDR: Endpoint Sav Enabled</description> 
+  </rule>
+
+<!--Event::Endpoint::SavScanComplete-->
+
+<rule id="100424" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::SavScanComplete</field> 
+     <description>Sophos XDR: Endpoint Sav Scan Complete</description> 
+  </rule>
+
+<!--Event::Endpoint::ServiceNotRunning-->
+
+<rule id="100425" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::ServiceNotRunning</field> 
+     <description>Sophos XDR: Endpoint Service Not Running</description> 
+  </rule>
+
+<!--Event::Endpoint::ServiceRestored-->
+
+<rule id="100426" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::ServiceRestored</field> 
+     <description>Sophos XDR: Endpoint Service Restored</description> 
+  </rule>
+
+<!--Event::Endpoint::Threat::CleanupFailed-->
+
+<rule id="100427" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Threat::CleanupFailed</field> 
+     <description>Sophos XDR: Endpoint Threat Cleanup Failed</description> 
+  </rule>
+
+<!--Event::Endpoint::Threat::CommandAndControlDetected-->
+
+<rule id="100428" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Threat::CommandAndControlDetected</field> 
+     <description>Sophos XDR: Endpoint Threat Command and Control Detected</description> 
+  </rule>
+
+<!--Event::Endpoint::Threat::CommandAndControlDismissed-->
+
+<rule id="100429" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Threat::CommandAndControlDismissed</field> 
+     <description>Sophos XDR: Endpoint Threat Command and Control Dismissed</description> 
+  </rule>
+
+<!--Event::Endpoint::Threat::Detected-->
+
+<rule id="100430" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Threat::Detected</field> 
+     <description>Sophos XDR: Endpoint Threat Detected</description> 
+  </rule>
+
+<!--Event::Endpoint::Threat::IpsInboundDetection-->
+
+<rule id="100431" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Threat::IpsInboundDetection</field> 
+     <description>Sophos XDR: Endpoint Threat IPS Inbound Detection</description> 
+  </rule>
+
+<!--Event::Endpoint::Threat::PuaCleanupFailed-->
+
+<rule id="100432" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Threat::PuaCleanupFailed</field> 
+     <description>Sophos XDR: Endpoint Threat PUA Cleanup Failed</description> 
+  </rule>
+
+<!--Event::Endpoint::Threat::PuaDetected-->
+
+<rule id="100433" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::Threat::PuaDetected</field> 
+     <description>Sophos XDR: Endpoint Threat PUA Detected</description> 
+  </rule>
+
+<!--Event::Endpoint::UpdateFailure-->
+
+<rule id="100434" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::UpdateFailure</field> 
+     <description>Sophos XDR: Endpoint Update Failure</description> 
+  </rule>
+
+<!--Event::Endpoint::UpdateRebootRequired-->
+
+<rule id="100435" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::UpdateRebootRequired</field> 
+     <description>Sophos XDR: Endpoint Update Reboot Required</description> 
+  </rule>
+
+<!--Event::Endpoint::UpdateSuccess-->
+
+<rule id="100436" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::UpdateSuccess</field> 
+     <description>Sophos XDR: Endpoint Update Success</description> 
+  </rule>
+
+<!--Event::Endpoint::UserAutoCreated-->
+
+<rule id="100437" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::UserAutoCreated</field> 
+     <description>Sophos XDR: Endpoint User Auto Created</description> 
+  </rule>
+
+<!--Event::Endpoint::WebControlViolation-->
+
+<rule id="100438" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::WebControlViolation</field> 
+     <description>Sophos XDR: Endpoint Web Control Violation</description> 
+  </rule>
+
+<!--Event::Endpoint::WebFilteringBlocked-->
+
+<rule id="100439" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::WebFilteringBlocked</field> 
+     <description>Sophos XDR: Endpoint Web Filtering Blocked</description> 
+  </rule>
+
+<!--Event::Endpoint::WindowsFirewall::Blocked-->
+
+<rule id="100440" level="5"> 
+     <decoded_as>json</decoded_as> 
+     <field name="type">Event::Endpoint::WindowsFirewall::Blocked</field> 
+     <description>Sophos XDR: Endpoint Windows Firewall Blocked</description> 
+  </rule>
+
+</group>
+
+<!--SOPHOS XDR-->
