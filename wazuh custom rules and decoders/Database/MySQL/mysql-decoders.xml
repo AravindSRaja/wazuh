@@ -1,0 +1,19 @@
+<decoder name="custom_mysql">
+   <prematch>^Query\t\w</prematch>
+   <regex>^(\w+)\t(\.*)$</regex>
+   <order>_action, command</order>
+</decoder>
+
+<decoder name="mysql2">
+  <prematch>\.*Connect</prematch>
+</decoder>
+<decoder name="mysql2-connect">
+  <parent>mysql2</parent>
+  <regex>Access denied for user ('\.*'@'\.*')\.*</regex>
+  <order>user</order>
+</decoder>
+<decoder name="mysql2-connectsuccess">
+  <parent>mysql2</parent>
+  <regex>[A-Za-z0-9]+@[A-Za-z0-9]+ on  using Socket</regex>
+  <order>user</order>
+</decoder>
